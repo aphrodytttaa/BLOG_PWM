@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Profile</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Menyertakan Bootstrap CSS untuk styling responsif -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+<script src="app.js"></script>
+
+<style>
+/* Mengatur semua elemen agar box model menyertakan padding dan border */
+* {
+  box-sizing: border-box;
+}
+
+/* Mengatur font default untuk seluruh halaman */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mengatur tampilan gambar agar responsif dan estetis */
+img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+}
+
+/* Mengatur tampilan header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Navigasi samping kiri */
+nav {
+  float: left;
+  width: 10%;
+  height: 250px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Menghilangkan bullet pada daftar di dalam nav */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Artikel berisi konten utama profil */
+article {
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: #f1f1f1;
+  height: 250px; 
+}
+
+/* Membersihkan float pada section agar layout tidak rusak */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Mengatur tampilan footer */
+footer {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive design dengan navigasi dan artikel menjadi blok penuh */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Bagian Header -->
+<header>
+  <h1>Aphrodyta's Hiking Journey</h1>
+</header>
+
+<!-- Bagian Profil dengan Navigasi dan Artikel -->
+<section>
+    <div class="row">
+        <!-- Navigasi samping -->
+        <div class="col-12 col-md-3  " style="background-color: lightgray;">
+            <div class="d-flex flex-column my-3 px-3 gap-3">
+                <a href="#Profile" class="btn btn-primary">Profile</a>
+                <a href="#Galery" class="btn btn-primary">Galery</a>
+            </div>
+        </div>
+
+        <!-- Artikel profil Aphrodyta -->
+        <div class="col-12 col-md-9">
+            <article id="Profile">
+              <h1>Tentang Aphrodyta</h1>
+              <p style="text-align: justify;">Saya merupakan Mahasiswi UTDI (universitas teknologi digital indonesia) 
+              Jurusan Informatika yang lahir di yogyakarta, 30 april 2003. Saya sekarang sedang 
+              menempuh semester 6 yang artinya saya merupakan mahasiswa semester akhir. 
+              Serambi menjalani kegiatan perkuliahan di semester 6, saya memiliki kegiatan sampingan yang 
+              saya lakukan untuk melepas stress yaitu dengan Mendaki berbagai gunung. Salah satunya Gunung Merbabu, 
+              Gunung Andong, dan Gunung Sindoro.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Bagian Galeri Foto Pendakian -->
+<section class="text-center mt-4" id="Galery">
+    <h2>Galery</h2>
+    <div class="row g-4">
+        <!-- Bagian Galeri Gunung Merbabu -->
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm">
+                <img src="M5.jpg" class="card-img-top" alt="Foto 1">
+                <div class="card-body">
+                    <p class="card-text">Gunung Merbabu</p>
+                    <a href="page2.html" class="btn btn-primary">View</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Galeri Gunung Andong -->
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm">
+                <img src="A2.jpg" class="card-img-top" alt="Foto 2">
+                <div class="card-body">
+                    <p class="card-text">Gunung Andong</p>
+                    <a href="page3.html" class="btn btn-primary">View</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Galeri Gunung Sindoro -->
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm">
+                <img src="S3.jpg" class="card-img-top" alt="Foto 3">
+                <div class="card-body">
+                    <p class="card-text">Gunung Sindoro</p>
+                    <a href="page4.html" class="btn btn-primary">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bagian Footer dengan link ke media sosial -->
+<footer>
+    <p><a href="https://www.instagram.com/aphrodyttasls?igsh=MWd0ZW1qNGJ1eGVrZQ%3D%3D&utm_source=qr" class="btn btn-primary">Instagram</a>
+      <a href="https://www.tiktok.com/@aphrodytaa?_t=ZS-8w6YBpY7fXT&_r=1" class="btn btn-primary">Tiktok</a></p>
+</footer>
+
+<output></output>
+
+<!-- Script Bootstrap JS untuk komponen interaktif -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

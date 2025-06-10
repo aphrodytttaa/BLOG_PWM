@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sindoro</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Menyertakan Bootstrap CSS untuk styling responsif -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+<style>
+    /* Mengatur semua elemen agar box model menyertakan padding dan border */
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Mengatur font default untuk seluruh halaman */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Mengatur tampilan gambar agar responsif dan estetis */
+    img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          border-radius: 8px;
+    }
+    
+    /* Mengatur tampilan header */
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+    
+    /* Navigasi samping kiri */
+    nav {
+      float: left;
+      width: 30%;
+      height: 400px; 
+      background: #ccc;
+      padding: 20px;
+    }
+    
+    /* Membersihkan float pada section agar layout tidak rusak */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Mengatur tampilan footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    
+    /* Responsive design dengan navigasi dan artikel menjadi blok penuh */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+</head>
+<body>
+<!-- Bagian Header -->
+<header>
+  <h1>Gunung Sindoro</h1>
+</header>
+
+<!-- Bagian Profil dengan Navigasi dan Artikel -->
+<section>
+  <div class="row">
+    <!-- Navigasi samping -->
+    <div class="col-12 col-md-3  "style="background-color: lightgray;">
+        <div class="d-flex flex-column my-3 px-3 gap-3">
+            <a href="#Sindoro" class="btn btn-primary">Tentang Sindoro</a>
+            <a href="#Galery" class="btn btn-primary">Galery Sindoro</a>
+        </div>
+    </div>
+
+    <!-- Artikel tentang Sindoro -->
+    <div class="col-12 col-md-9">
+        <article id="Sindoro">
+            <h1>Tentang Sindoro</h1>
+            <p style="text-align: justify;">Gunung Sindoro adalah gunung berapi bertipe stratovolcano yang terletak di perbatasan Kabupaten 
+                Temanggung dan Wonosobo, Jawa Tengah, dengan ketinggian sekitar 3.150 meter di atas permukaan laut. 
+                Gunung ini masih tergolong aktif, meskipun letusannya jarang terjadi. Sindoro menjadi salah satu 
+                destinasi favorit para pendaki karena menawarkan jalur yang menantang serta pemandangan spektakuler, 
+                termasuk hamparan ladang tembakau, hutan pinus, dan panorama pegunungan sekitarnya seperti Gunung Sumbing, 
+                Merbabu, dan Merapi. Terdapat beberapa jalur pendakian yang populer, salah satunya adalah via Kledung. 
+                Puncak Sindoro dikenal dengan kawah aktifnya dan sering dijadikan tempat berkemah oleh para pendaki.
+            </p>
+            <p style="text-align: justify;">Pada saat saya mendaki gunung Sindoro, saya memilih jalur Kledung. Saya memilih jalur tersebut karena 
+                jalur ini memiliki pemandangan yang sangat indah dan juga lebih mudah diakses dibandingkan jalur lainnya. 
+                Selain itu, jalur Kledung juga terkenal dengan keindahan sunrise-nya yang memukau. Saya mendaki berdua bersama 
+                om saya. Kita menghabiskan waktu 2 hari 1 malam untuk mendaki gunung Sindoro. 
+            </p>
+        </article>
+    </div>
+</section>
+
+<!-- Bagian Galeri Foto Pendakian Gunung Sindoro -->
+<section class="text-center mt-4" id="Galery">
+    <h2>Galery Sindoro</h2>
+    <div class="row g-4">
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm">
+                <img src="S1.jpg" class="card-img-top" alt="Foto 1">
+                <div class="card-body">
+                    <p class="card-text">Foto 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm">
+                <img src="S2.jpg" class="card-img-top" alt="Foto 2">
+                <div class="card-body">
+                    <p class="card-text">Foto 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm">
+                <img src="S3.jpg" class="card-img-top" alt="Foto 3">
+                <div class="card-body">
+                    <p class="card-text">Foto 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm">
+                <img src="S4.jpg" class="card-img-top" alt="Foto 4">
+                <div class="card-body">
+                    <p class="card-text">Foto 4</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm">
+                <img src="S5.jpg" class="card-img-top" alt="Foto 5">
+                <div class="card-body">
+                    <p class="card-text">Foto 5</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm">
+                <img src="S6.jpg" class="card-img-top" alt="Foto 6">
+                <div class="card-body">
+                    <p class="card-text">Foto 6</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+</br>
+
+<!-- Tombol kembali ke halaman utama -->
+<div class="d-flex justify-content-center">
+    <a href="index.html" class="btn btn-primary">Kembali ke Home</a>
+  </div>
+  
+  <br>
+</br>
+
+<!-- Bagian Footer dengan link ke media sosial -->
+<footer>
+    <p><a href="https://www.instagram.com/aphrodyttasls?igsh=MWd0ZW1qNGJ1eGVrZQ%3D%3D&utm_source=qr" class="btn btn-primary">Instagram</a>
+      <a href="https://www.tiktok.com/@aphrodytaa?_t=ZS-8w6YBpY7fXT&_r=1" class="btn btn-primary">Tiktok</a></p>
+</footer>
+
+<!-- Script Bootstrap JS untuk komponen interaktif -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
