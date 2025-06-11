@@ -6,9 +6,9 @@ self.addEventListener("install", async event => {
     "/", 
     "app.js", 
     "index.html",
-    "A1.png", "A2.png", "A3.png", "A4.png", "A5.png", "A6.png",
-    "M1.png", "M2.png", "M3.png", "M4.png", "M5.png", "M6.png",
-    "S1.png", "S2.png", "S3.png", "S4.png", "S5.png", "S6.png",
+    "A1.jpg", "A2.jpg", "A3.jpg", "A4.jpg", "A5.jpg", "A6.jpg",
+    "M1.jpg", "M2.jpg", "M3.jpg", "M4.jpg", "M5.jpg", "M6.jpg",
+    "S1.jpg", "S2.jpg", "S3.jpg", "S4.jpg", "S5.jpg", "S6.jpg",
     ]); 
 });
  
